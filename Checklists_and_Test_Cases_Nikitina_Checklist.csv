@@ -1,0 +1,30 @@
+ID,Summary  ,Result: Passed/Failed,Comments
+1,Verify the ability to log in for an account. ,Passed  ,"Smoke, Regression"
+2,User can access selected courses,Passed  ,"Smoke, Regression"
+3,Course progress is saved correctly,Passed  ,"Smoke, Regression"
+4,User can log out successfully,Passed  ,"Smoke, Regression"
+5,Home page loads and displays courses,Passed  ,"Smoke, Regression"
+6,Course catalog loads and displays courses,Passed  ,"Smoke, Regression"
+7,Search functionality returns relevant results,Passed  ,"Smoke, Regression"
+8,Mobile Responsiveness,Passed  ,"Smoke, Regression"
+9,Basic navigation throughout the application,Passed  ,Regression
+10,Verify that user can change profile information,Passed  ,Regression
+11,Verify that user can reset password,Passed  ,Regression
+12,Verify that user can view personal profile information,Passed  ,Regression
+13,Verify that user can update profile settings,Passed  ,Regression
+14,Verify that user can upload profile photo,Passed  ,Regression
+15,Verify that user can complete course registration,Passed  ,Regression
+16,Verify that user can add courses to bookmark,Passed  ,Regression
+17,Verify ability to upload files in practical task section ,Passed  ,Regression
+18,Page load time,Passed  ,Regression
+19,"Ensure that the ""Continue learning"" button is visible and clickable on Active learning page.",Passed  ,Regression
+20,Ensure that clicking on a course title redirects the user to the correct course details page.,Passed  ,Regression
+21,Validate that the course descriptions are visible and provide relevant information about the course.,Passed  ,Regression
+22,Ensure that the language displayed for each course matches the language in which the course is offered.,Passed  ,Regression
+23,"Check the behavior when the ""View more"" button on home page is clicked without an internet connection; the application should show an appropriate error message.",Passed  ,Regression
+24,"Test the scenario where images fail to load, ensuring that placeholders or error messages are displayed instead.",Passed  ,Regression
+25,Test the responsiveness of the course cards by resizing the browser window and verifying that the layout adjusts appropriately without losing functionality.,Passed  ,Regression
+26,"Confirm that clicking the ""Continue"" button on ""About"" course page navigates user to the appropriate next step in their progress.",Passed  ,Regression
+27,"Verify that user can contact support with ""Help & Support"" form",Passed  ,Regression
+28,"Confirm that clicking the ""Continue"" button on ""My progress"" page navigates user to the appropriate course on https://elearn.epam.com/",Passed  ,Regression
+29,"Verify the ability to log in for an account with other options: Google, Apple, Discord, Github etc.",Passed  ,Regression
