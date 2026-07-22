@@ -1,0 +1,42 @@
+ID,Summary,Description,Steps to reproduce,Reproducibility,Severity,Priority,Attachments,Comments
+SS1-1,Overlapping text in reward popup,"The “No” and ""Yes"" button not aligned relative to the prompt text “Would you like to watch an ad for coins?” and dialog window, making the text harder to read.
+Precondition: Launch the game and enter the event screen (e.g., Jade League).
+Exp: Text and buttons should have sufficient spacing and alignment.
+Act: The ""Yes"" and “No” buttons are not aligned in the dialog window.","1.Trigger the ad reward prompt in the game
+2.Observe dialog window",Always,Minor,Medium,https://drive.google.com/file/d/1cjzaq7_AbyGaVq5KhF9JG-mhbn0If-cH/view?usp=sharing,User Interface
+SS1-2,Resource Display Overflow,"The coin count shows ""1,768"" which may cause display issues if it reaches higher values (e.g., millions).
+Exp: Implement number formatting (e.g., ""1.7K"", ""1M"") for large values.
+Act: The full number displayed.","1. Play the game to earn diamonds and other treasures to thouthands.
+2. Observe the behavior.",Always,Minor,Low,https://drive.google.com/file/d/1rd884SL0qWkR1nZlS5R1zAWApB1aFrZg/view?usp=sharing,User Interface
+SS2-1,German language setting displays content in English,"The interface shows ""German"" language selected, but text elements remain in English. For example, product descriptions are in English.
+Exp: All text should be in German.
+Act: English text instead of German.","1.Set language to German
+2.Add items to cart
+3.Observe language content",Always,Medium,High,,Localization
+SS2-2,Incorrect calculation of the final cost,"The sum of the displayed item prices, including the Euro-priced item, does not equal the calculated subtotal or the final total, indicating a failure to correctly convert the €53.89 item or a complete mathematical miscalculation.
+Exp: The Subtotal must be equal the sum of all item prices (after correct currency conversion for the Euro item).
+Act: The calculated Subtotal of $211.34 does not match the sum of the items displayed in the cart.","1. Add items to cart.
+2. Calculate the sum.
+3. Compare with subtotal",Always,Critical ,High,,Functional
+SS2-3,Inconsistent and Mixed Currency Symbols,"The cart page displays a mix of currency symbols ($ and €) for different items, which is inconsistent and misleading for the customer, especially when the header claims a specific currency (USD).
+Exp: All product prices should be displayed using a single, consistent currency symbol throughout the cart (e.g., all $), with the Euro-priced item converted to the site's primary currency (USD) before being listed.
+Act: Product prices are displayed using mixed currency symbols ($, €) within a single transaction list, despite the implied primary currency (USD) and region (German) being set in the header.","1. Set currency to USD.
+2. Add items to cart. (1.Men's Soft And Breathable Mid-High Anti-skid Retro Boots Tooling Shoes, 2.Men's Vintage Ethnic Print Zip Pocket Plush Lined Thermal Jacket).
+3. Check the currency displayed.",Always,Medium,Medium,https://drive.google.com/file/d/1FbeoMZjy9TC5kRziCQknVoyyZzeweAfy/view?usp=sharing,Localization
+SS2-4,The checkout summary panel displayed the wrong calculation for Total price,"The checkout summary panel contains a severe functional discrepancy where the displayed Total ($299.45) does not logically follow the displayed Subtotal ($211.34) after the Free Gift discount (-$11.89) is applied.
+Exp: The Total must accurately reflect the Subtotal minus the discount. Given the values, the Total should be $199.45.
+Act: Mathematical Discrepancy: The formula (Subtotal - Discount) does not equal the displayed Total ($211.34 - $11.89 ≠ $299.45).","1. Add items to cart.
+2. Calculate the subtotal.
+3. Subtract the free gift.
+3. Compare with total.",Always,Critical,High,https://drive.google.com/file/d/1uYYLCkFsIQYYpX_B3PQp2e61KnydtoO3/view?usp=sharing,Functional
+SS2-5,Incorrect Free Gift behavior,"The checkout summary panel contains a severe functional discrepancy where the displayed Subtotal actually contains added Free Gift to total price of items.
+Exp: The Subtotal must accurately reflect the sum of item prices.
+Act: The Subtotal reflect the sum of full item prices(without discounts) + Free Gift","1. Add items to cart.
+2. Calculate the full price subtotal.
+3. Subtract the free gift.
+3. Compare with subtotal displayed.",Always,Major,High,,Functional
+SS2-6,Item Count Mismatch in Cart Icon Badge,"The shopping cart icon in the top-right corner displays a quantity badge of '6', but a manual count of the visible items in the cart shows only 5 total items. This discrepancy indicates an error in the backend logic tracking the cart's contents.
+Exp: The cart icon badge must accurately reflect the total quantity of individual items listed in the cart, which should be 5.
+Act: The cart icon displays an item count of 6.","1. Add 2 items to cart.
+2. Change the amount of them to 2.
+3.Check the amount in the top-right corner Icon Badge",Always,Medium,Medium,,Functional
