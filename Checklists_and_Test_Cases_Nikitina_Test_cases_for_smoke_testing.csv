@@ -1,0 +1,61 @@
+ID,Requirements No.,Priority,Module/Sub-module,Test Case Description,Expected Results,Status,Comments
+1,UR1.1,Major,Authentication & Session Management,"Verify the ability to log in for an account. 
+Preconditions:
+Valid EPAM credentials available
+Steps:
+1. Navigate to learn.epam.com
+2. Click Log In button
+3. Enter valid email and password
+3. Click Sign in button",Expected Result: User is successfully logged in and redirected to Home page,Passed,
+2,UR1.2,Major,Course Navigation & Access,"User can access selected courses
+Preconditions: 
+User logged in, has assigned courses
+Steps:
+1. Navigate to ""My learning"" section
+2. Click ""Active learning"" button
+2. Select an available course
+3. Click ""Start Course"" or ""Continue learning""",Expected Result: Course content loads and displays properly,Passed,
+3,UR1.3,High,Assessment & Progress Tracking,"Course progress is saved correctly
+Preconditions:
+User has started course content
+Steps:
+1. Complete part of a course module
+2. Log out and log back in
+3. Return to the same course","Expected Result:
+Progress is maintained and displayed correctly",Passed,https://drive.google.com/file/d/1rQWvJJYzueStut70MJDrarkI0H4iBMaG/view?usp=sharing
+4,UR1.4,Major,Authentication & Session Management,"User can log out successfully
+Preconditions:
+User logged in
+Steps:
+1. Click on User Account button
+2. Select ""log out"" in drop down menu
+3. Click ""Logout"" button on the logout redirected page",Expected Result: User is successfully logged out and redirected to Home page - https://learn.epam.com/start,Passed,
+5,UR1.5,High,Course Navigation & Access,"Home page loads and displays courses
+Preconditions:
+User logged in
+Steps:
+1. Navigate to Home page","Expected Result:
+User see Trending programs, Continue learning, Self-paced courses by EPAM and other courses offered.",Passed,
+6,UR1.6,High,Course Navigation & Access,"Course catalog loads and displays courses
+Preconditions:
+User logged in
+Steps:
+1. Navigate to Catalog page","Expected Result:
+User can see different courses with a catalog and filters to help in selection",Passed,
+7,UR1.7,High,Course Discovery,"Verify course search returns relevant results
+Preconditions: 
+User logged in with course catalog access
+Steps:
+1. Navigate to course catalog
+2. Enter search term in search box (ex: testing)
+3. Press Enter or wait for loading","Expected Result: 
+Relevant courses are displayed in search results",Passed,https://drive.google.com/file/d/1oEUQV2F5q3lkFaHNgBOAYFOgTlvDOUfS/view?usp=sharing
+8,UR1.8,Major,User Interface & Accessibility,"Mobile Responsiveness
+Verify platform works on mobile devices
+Preconditions:
+Access to mobile device or browser developer tools
+Steps:
+1. Access learn.epam.com on mobile device
+2. Perform login
+3. Navigate through basic functionality","Expected Result: 
+Platform displays properly and functions on mobile",Passed,
