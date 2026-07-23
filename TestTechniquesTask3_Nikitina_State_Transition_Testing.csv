@@ -1,0 +1,19 @@
+"The system must allow a customer to place an order and track its progression through Processing, Shipped, and Delivered states. 
+Crucially, the system must allow cancellation only within 60 minutes of placement, automatically block late cancellations in the Processing state, 
+and automatically flag or cancel the order if payment fails, stock errors occur, or delivery cannot be completed after 5 days.",,,,
+,,,,
+State Transition Table,,,,
+ID,Current State,Event,Action,Next State
+1,Initial,Customer completes checkout.,Payment successfully processed.,Placed
+2,Placed,Customer immediately cancels.,Cancellation requested within 1 hour of placement.,Canceled (Pre-Processing)
+3,Placed,System reviews order.,Order flagged for fraud/inventory issue.,Failed (System Error)
+4,Placed,Warehouse accepts order.,Processing begins.,Processing
+5,Processing,Customer attempts cancellation.,Cancellation requested after 1 hour and before shipment.,Processing
+6,Processing,Fulfillment completes order.,Order is packaged and labeled.,Shipped
+7,Shipped,Carrier updates tracking.,Package is out for delivery.,Out for Delivery
+8,Out for Delivery,Carrier records completion.,Package is successfully delivered.,Delivered
+9,Out for Delivery,Delivery attempt fails.,Customer not home/address error.,Delivery Attempt Failed
+10,Delivery Attempt Failed,Customer updates address/schedules redelivery.,Redelivery requested.,Out for Delivery
+11,Delivery Attempt Failed,"Time lapse (e.g., 5 days).",No redelivery scheduled/failed return.,Failed (System Error)
+12,Delivered,Customer initiates return.,Return requested within 30 days.,Return in Progress
+13,Initial/Placed,Customer completes checkout.,Payment fails/declined.,Payment Failed

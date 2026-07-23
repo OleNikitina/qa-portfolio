@@ -1,0 +1,27 @@
+File Upload Feature,,,,
+"A web application allows users to upload documents, but only specific file formats are supported.
+Supported file types: .pdf, .docx, .txt",,,,
+,,,,
+Equivalence Classes,,,,
+Valid,.pdf,Supported doc,,
+Valid,.docx,Supported doc,,
+Valid,.txt,Supported doc,,
+Invalid,".exe, .bat, .zip, etc.",Executable or compressed files,,
+Invalid,".jpg, .png, .mp4, etc.",Media file types,,
+Invalid,No extension / corrupted filename,Input format error,,
+,,,,
+Checklist,,,,
+ID,Summary,,,Result: Passed/Failed
+1,Upload a .pdf file,,,Passed  
+2,Upload a .docx file,,,Passed  
+3,Upload a .txt file,,,Passed  
+4,Upload an .exe/.bat/.zip file (unsupported file type.),,,Passed  
+5,Upload a .jpg/.mp4/.png file (unsupported file type.),,,Passed  
+6,"Upload a file without an extension (e.g., readme)",,,Passed  
+7,Upload a corrupted file,,,Passed  
+8,"Upload a renamed file (e.g., virus.pdf but actually an .exe)",,,Passed  
+9,Upload multiple valid files together (.pdf + .txt),,,Passed  
+10,Upload multiple invalid files,,,Passed  
+11,Upload one valid + one invalid file in the same group,,,Passed  
+12,Try to drag and drop a valid file instead of using the upload button,,,Passed  
+13,Upload from mobile browser,,,Passed  

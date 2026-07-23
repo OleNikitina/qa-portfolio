@@ -1,0 +1,21 @@
+Food delivery app checkout,,,,,,
+"Parameters: Payment method (card, PayPal, wallet), Delivery type (home, pickup), Coupon applied (yes/no), Tip % (0, 5, 10).",,,,,,
+,,,,,,
+Parameter List,,,,,,
+Payment method,card,PayPal,wallet,,,
+Delivery type,home,pickup,,,,
+Coupon applied,yes,no,,,,
+Tip %,0,5,10,,,
+,,,,,,
+Pairwise Checklist,,,,,,
+ID,Summary,,,,,Result: Passed/Failed
+1,Verify checkout works with card + home delivery + coupon + no tip.,,,,,Passed  
+2,Verify checkout works with card + pickup + no coupon + 5% tip.,,,,,Passed  
+3,Verify checkout works with PayPal + home delivery + no coupon + 10% tip.,,,,,Passed  
+4,Verify checkout works with PayPal + pickup + coupon + no tip.,,,,,Passed  
+5,Verify checkout works with wallet + home delivery + no coupon + 5% tip.,,,,,Passed  
+6,Verify checkout works with wallet + pickup + coupon + 10% tip.,,,,,Passed  
+7,Verify checkout works with card + home delivery + no coupon + 10% tip.,,,,,Passed  
+8,Verify checkout works with PayPal + pickup + no coupon + 5% tip.,,,,,Passed  
+9,Verify checkout works with wallet + home delivery + coupon + no tip.,,,,,Passed  
+10,Verify checkout works with card + pickup + coupon + 10% tip.,,,,,Passed  

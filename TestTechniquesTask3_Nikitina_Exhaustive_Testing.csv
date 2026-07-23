@@ -1,0 +1,23 @@
+"Digital Lock with a 2-Digit PIN Code
+A smart cabinet lock opens only if the correct 2-digit PIN (00–99) is entered.",,,,
+,,,,
+Input Paramete,Value Domain,,,
+Digit 1,0 to 9,,,
+Digit 2,0 to 9,,,
+The total number of possible combinations is 10 × 10 = 100 possible combinations,,,,
+,,,,
+For a 2-digit numeric code it is possible to run 100 automated tests to ensure the system never accepts an incorrect code combination.,,,,
+Checklist,,,,
+ID,Summary,,,Result: Passed/Failed
+1,Input 00,,,Passed  
+2,Input 01,,,Passed  
+3,Input 02,,,Passed  
+...,...,,,
+100,Input 99,,,Passed  
+101,"Input negative number ""-1""",,,Passed  
+102,"Input more than two digits ""100""",,,Passed  
+103,"Input only one digit ""5""",,,Passed  
+104,"Test no input """"(empty)",,,Passed  
+105,"Input is blank spaces ""   """,,,Passed  
+107,"Test very long input sequence (e.g., 20 digits)",,,Passed  
+108,Power off during input,,,Passed  

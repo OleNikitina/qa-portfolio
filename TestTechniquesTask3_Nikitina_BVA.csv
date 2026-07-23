@@ -1,0 +1,36 @@
+Subscription pricing module with multi-level discounts,,,,,,
+A SaaS company offers discounts on annual subscriptions based on the number of licenses purchased.,,,,,,
+Licenses Purchased,Annual Discount,,,,,
+1-9,0% (Full Price),,,,,
+10-49,10% Discount,,,,,
+50-99,15% Discount,,,,,
+100+,25% Discount,,,,,
+,,,,,,
+BVA Table,,,,,,
+Licenses Purchased,Expected Discount,,,,,
+0,Invalid,,,,,
+1,0%,,,,,
+9,0%,,,,,
+10,10%,,,,,
+49,10%,,,,,
+50,15%,,,,,
+99,15%,,,,,
+100,25%,,,,,
+-1,Invalid,,,,,
+,,,,,,
+Boundary Value Checklist,,,,,,
+ID,Summary,,,,,Result: Passed/Failed
+1,Check system minimum(Invalid) - 0 (Error/Blocked),,,,,Passed  
+2,Check system minimum (on boundary) - 1 ((Full Price).),,,,,Passed  
+3,Check just above boundary - 2 (Full Price),,,,,Passed  
+4,Check highest license count for 0% discount - 9 ,,,,,Passed  
+5,Check lowest license count for 10% discount - 10,,,,,Passed  
+6,Check just above boundary for 10% discount - 11,,,,,Passed  
+7,Check highest license count for 10% discount - 49,,,,,Passed  
+8,Check lowest license count for 15% discount - 50,,,,,Passed  
+9,Check just above boundary for 15% discount - 51,,,,,Passed  
+10,Check highest license count for 15% discount - 99,,,,,Passed  
+11,Check lowest license count for the maximum 25% discount - 100,,,,,Passed  
+12,Check 101 - just above lowest limit of last range,,,,,Passed  
+13,Test that the 25% discount applies correctly far beyond the 100 threshold - 1000,,,,,Passed  
+14,Check negative licenses - invalid input (-1),,,,,Passed  

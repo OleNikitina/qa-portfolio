@@ -1,0 +1,16 @@
+"A company is migrating from an old CRM system to a new cloud-based solution (e.g., integrating sales, marketing, and support modules). 
+The development involves integrating many third-party tools (email, calendar, telephony) and migrating historical customer data.",,,
+,,,
+Exploratory Testing Checklist,,,
+ID,Summary,,Result: Passed/Failed
+1,"Check if you can find, update, and convert an old customer record to an active sales opportunity without losing data.",,Passed  
+2,"Test creating a meeting in the linked external calendar (e.g., Outlook) and verify it appears correctly on the CRM customer record and in the CRM's internal activity log.",,Passed  
+3,"Run reports filtering on the oldest date, the largest set of notes, and a non-standard currency from the legacy system. Check for loading delays or data corruption.",,Passed  
+4,"Two users simultaneously edit the same high-risk field (e.g., Customer Status or Account Owner) on the same record. Verify the system handles the conflict cleanly (e.g., locks one user out or performs a last-save-wins update).
+",,Passed  
+5,"Log in as a low-level ""Marketing User"" and attempt to perform high-privilege actions, such as changing the ""Sales Owner"" field or viewing confidential notes.",,Passed  
+6,"Rearrange all widgets, change the color scheme, and apply a complex filter. Save the layout. Log out and immediately log back in. Verify the saved state is loaded instantly and correctly.",,Passed  
+7,"Apply a filter (e.g., a specific zip code for regional sales) that you know will return zero data points (a boundary case). Then, apply a filter that returns the maximum possible number of data points. Verify no crashes or rendering errors occur in either scenario.",,Passed  
+8,"View the dashboard on a severely restricted screen size (e.g., simulating a mobile phone or a split-screen desktop window). Verify that the layout changes correctly, without data clipping.",,Passed  
+9,"Temporarily disconnect one of the underlying real-time data feeds. Verify the charts relying on that feed show a clear, localized ""Data Source Disconnected"" error, while other charts continue to update normally.",,Passed  
+10,"Export the dashboard view (to PDF or CSV) while the data is actively refreshing. Verify the exported file is not corrupted and that the time-stamped data in the file accurately reflects the moment of export, not a delayed state.",,Passed  

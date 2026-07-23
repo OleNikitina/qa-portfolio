@@ -1,0 +1,49 @@
+ATM Withdrawal,,,,
+,,,,
+Causes,,,,
+C!,Correct PIN,,,
+C2,Sufficient Balance,,,
+C3,Limit Not Exceeded,,,
+C3,ATM Has Cash,,,
+,,,,
+Effects,,,,
+E1,Dispense Cash,,,
+E2,Incorrect PIN,,,
+E3,Insufficient Balance,,,
+E4,Limit Exceeded,,,
+E5,ATM Out of Cash,,,
+,,,,
+C1 AND C2 AND C3 AND C4,,- E1 (Dispense Cash),,
+NOT C1,,- E2 (Incorrect PIN),,
+C1 AND NOT C2,,- E3 (Insufficient Balance),,
+C1 AND C2 AND NOT C3,,- E4 (Limit Exceeded),,
+C1 AND C2 AND C3 AND NOT C4,,- E5 (ATM Out of Cash),,
+,,,,
+ATM Cause–Effect Graph:,,,,
+https://drive.google.com/file/d/1tO76wzXJzcGxeByT-hevXVea6f9lxNex/view?usp=sharing,,,,
+,,,,
+Cause-effect Checklist,,,,
+ID,Summary,,,Result: Passed/Failed
+1,"Successful Withdrawal:
+Enter correct PIN, 
+Ensure sufficient balance,
+Ensure daily limit not exceeded,
+Ensure ATM has cash.",,,Passed  
+2,"Incorrect PIN:
+Enter incorrect PIN,
+Other conditions irrelevant (C2, C3, C4 don’t matter).",,,Passed  
+3,"Insufficient Balance:
+Enter correct PIN,
+Ensure account balance is below requested withdrawal,
+Ensure limit not exceeded,
+Ensure ATM has cash.",,,Passed  
+4,"Daily Limit Exceeded:
+Enter correct PIN,
+Ensure sufficient balance,
+Exceed daily withdrawal limit,
+Ensure ATM has cash.",,,Passed  
+5,"ATM Out of Cash:
+Enter correct PIN,
+Ensure sufficient balance,
+Ensure limit not exceeded,
+Simulate ATM has no physical cash.",,,Passed  

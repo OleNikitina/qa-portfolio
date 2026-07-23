@@ -1,0 +1,30 @@
+Airline Seat Reservation,,,,,,,,
+Conditions,,,,,,,,
+Passenger is Gold member,(Y/N),,,,,,,
+Flight is full ,(Y/N),,,,,,,
+Passenger is late,(Y/N),,,,,,,
+Actions,,,,,,,,
+Allow seat upgrade,,,,,,,,
+Put on waiting list,,,,,,,,
+Deny boarding,,,,,,,,
+,,,,,,,,
+Decision Table,,,,,,,,
+Conditions,Rule 1,Rule 2,Rule 3,Rule 4,Rule 5,Rule 6,Rule 7,Rule 8
+Gold member,Y,Y,Y,Y,N,N,N,N
+Flight is full,N,Y,N,Y,N,Y,N,Y
+Passenger is late,N,N,Y,Y,N,N,Y,Y
+Actions,,,,,,,,
+Seat upgrade,`+,`-,`-,`-,`-,`-,`-,`-
+Waiting list,`-,`+,`-,`-,`-,`+,`-,`-
+Deny boarding,`-,`-,`+,`+,`-,`-,`+,`+
+,,,,,,,,
+Checklist,,,,,,,,
+ID,Summary,,,,Result: Passed/Failed,,,
+1,"Gold member, flight not full, not late - Seat upgrade allowed",,,,Passed  ,,,
+2,"Gold member, flight full, not late - Put on waiting list.",,,,Passed  ,,,
+3,"Gold member, flight not full, late - Deny boarding",,,,Passed  ,,,
+4,"Gold member, flight full, late - Deny boarding.",,,,Passed  ,,,
+5,"Non-Gold, flight not full, not late → No upgrade, normal seat only.",,,,Passed  ,,,
+6,"Non-Gold, flight full, not late - Put on waiting list",,,,Passed  ,,,
+7,"Non-Gold, flight not full, late - Deny boarding.",,,,Passed  ,,,
+8,"Non-Gold, flight full, late - Deny boarding.",,,,Passed  ,,,
