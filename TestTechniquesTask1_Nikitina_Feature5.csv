@@ -1,0 +1,50 @@
+Parameter List,,,,,,,,,,,
+ Star Rating,1,2,3,4,5,,,,,,
+Number of Adults,1,2,5,10,,,,,,,
+Number of Children,0,1,5,10,,,,,,,
+Number of Beds,1,2,3,5,,,,,,,
+Free Wi-Fi,Yes,No,,,,,,,,,
+Breakfast Included,Yes,No,,,,,,,,,
+Room Amenities,Picturesque View,Balcony,Air conditioning,TV,Coffee Machine,Private Kitchen,,,,,
+Amenities,Parking,Pet-Friendly,Room Service,Facilities for disabled guests,24-hour front desk,,,,,,
+Distance from City Center,< ½ mile,< 1 mile,< 2 miles,Doesn’t matter,,,,,,,
+,,,,,,,,,,,
+Pairwise Checklist,,,,,,,,,,,
+ID,Summary  ,,,,,,,,,,Result: Passed/Failed
+1,"Star Rating: 1, Adults: 1, Children: 1, Beds: 1, Wi-Fi: Yes, Breakfast: Yes, Room Amenities: View, Amenities: Parking, Distance: < ½ mi",,,,,,,,,,Passed  
+2,"Star Rating: 1, Adults: 5, Children: 5, Beds: 3, Wi-Fi: No, Breakfast: No, Room Amenities: Balcony, Amenities: Pet-Friendly, Distance: < 1 mi",,,,,,,,,,Passed  
+3,"Star Rating: 1, Adults: 10, Children: 10, Beds: 5, Wi-Fi: Yes, Breakfast: No, Room Amenities: AC, Amenities: Room Service, Distance: < 2 mi",,,,,,,,,,Passed  
+4,"Star Rating: 3, Adults: 1, Children: 5, Beds: 5, Wi-Fi: No, Breakfast: Yes, Room Amenities: TV, Amenities: Disabled Facilities, Distance: Doesn't Matter",,,,,,,,,,Passed  
+5,"Star Rating: 3, Adults: 5, Children: 10, Beds: 1, Wi-Fi: Yes, Breakfast: Yes, Room Amenities: Coffee Machine, Amenities: 24-Hour Desk, Distance: < ½ mi",,,,,,,,,,Passed  
+6,"Star Rating: 3, Adults: 10, Children: 1, Beds: 3, Wi-Fi: No, Breakfast: Yes, Room Amenities: Private Kitchen, Amenities: Parking, Distance: < 1 mi",,,,,,,,,,Passed  
+7,"Star Rating: 5, Adults: 1, Children: 10, Beds: 3, Wi-Fi: No, Breakfast: No, Room Amenities: View, Amenities: Pet-Friendly, Distance: < 2 mi",,,,,,,,,,Passed  
+8,"Star Rating: 5, Adults: 5, Children: 1, Beds: 5, Wi-Fi: Yes, Breakfast: No, Room Amenities: Balcony, Amenities: Room Service, Distance: Doesn't Matter",,,,,,,,,,Passed  
+9,"Star Rating: 5, Adults: 10, Children: 5, Beds: 1, Wi-Fi: No, Breakfast: No, Room Amenities: AC, Amenities: Disabled Facilities, Distance: < ½ mi",,,,,,,,,,Passed  
+10,"Star Rating: 1, Adults: 1, Children: 10, Beds: 5, Wi-Fi: No, Breakfast: Yes, Room Amenities: TV, Amenities: 24-Hour Desk, Distance: < 1 mi",,,,,,,,,,Passed  
+11,"Star Rating: 1, Adults: 5, Children: 1, Beds: 3, Wi-Fi: Yes, Breakfast: No, Room Amenities: Coffee Machine, Amenities: Room Service, Distance: < 2 m",,,,,,,,,,Passed  
+12,"Star Rating: 1, Adults: 10, Children: 5, Beds: 1, Wi-Fi: Yes, Breakfast: Yes, Room Amenities: Private Kitchen, Amenities: Pet-Friendly, Distance: Doesn't Matter",,,,,,,,,,Passed  
+13,"Star Rating: 3, Adults: 1, Children: 1, Beds: 3, Wi-Fi: Yes, Breakfast: No, Room Amenities: View, Amenities: Disabled Facilities, Distance: < 1 mi",,,,,,,,,,Passed  
+14,"Star Rating: 3, Adults: 5, Children: 5, Beds: 5, Wi-Fi: No, Breakfast: Yes, Room Amenities: Balcony, Amenities: 24-Hour Desk, Distance: < 2 mi",,,,,,,,,,Passed  
+15,"Star Rating: 3, Adults: 10, Children: 10, Beds: 1, Wi-Fi: Yes, Breakfast: No, Room Amenities: AC, Amenities: Parking, Distance: Doesn't Matter",,,,,,,,,,Passed  
+16,"Star Rating: 5, Adults: 1, Children: 5, Beds: 1, Wi-Fi: Yes, Breakfast: Yes, Room Amenities: TV, Amenities: Room Service, Distance: < ½ mi",,,,,,,,,,Passed  
+17,"Star Rating: 5, Adults: 5, Children: 10, Beds: 3, Wi-Fi: No, Breakfast: Yes, Room Amenities: Coffee Machine, Amenities: Disabled Facilities, Distance: < 1 mi",,,,,,,,,,Passed  
+18,"Star Rating: 5, Adults: 10, Children: 1, Beds: 5, Wi-Fi: Yes, Breakfast: Yes, Room Amenities: Private Kitchen, Amenities: 24-Hour Desk, Distance: < 2 mi",,,,,,,,,,Passed  
+19,"Star Rating: 1, Adults: 5, Children: 10, Beds: 1, Wi-Fi: No, Breakfast: Yes, Room Amenities: View, Amenities: Room Service, Distance: Doesn't Matter",,,,,,,,,,Passed  
+20,"Star Rating: 1, Adults: 10, Children: 1, Beds: 5, Wi-Fi: Yes, Breakfast: No, Room Amenities: Balcony, Amenities: Disabled Facilities, Distance: < ½ mi",,,,,,,,,,Passed  
+21,"Star Rating: 3, Adults: 1, Children: 5, Beds: 1, Wi-Fi: No, Breakfast: No, Room Amenities: AC, Amenities: 24-Hour Desk, Distance: < 2 mi",,,,,,,,,,Passed  
+22,"Star Rating: 3, Adults: 5, Children: 1, Beds: 5, Wi-Fi: Yes, Breakfast: No, Room Amenities: TV, Amenities: Parking, Distance: Doesn't Matter",,,,,,,,,,Passed  
+23,"Star Rating: 3, Adults: 10, Children: 5, Beds: 3, Wi-Fi: No, Breakfast: No, Room Amenities: Coffee Machine, Amenities: Pet-Friendly, Distance: < ½ mi",,,,,,,,,,Passed  
+24,"Star Rating: 5, Adults: 1, Children: 1, Beds: 5, Wi-Fi: Yes, Breakfast: Yes, Room Amenities: Balcony, Amenities: Parking, Distance: < 1 mi",,,,,,,,,,Passed  
+25,"Star Rating: 5, Adults: 5, Children: 5, Beds: 1, Wi-Fi: No, Breakfast: No, Room Amenities: AC, Amenities: 24-Hour Desk, Distance: < 2 mi",,,,,,,,,,Passed  
+26,"Star Rating: 5, Adults: 10, Children: 10, Beds: 3, Wi-Fi: Yes, Breakfast: Yes, Room Amenities: TV, Amenities: Room Service, Distance: Doesn't Matter",,,,,,,,,,Passed  
+27,"Star Rating: 1, Adults: 1, Children: 5, Beds: 3, Wi-Wi: No, Breakfast: No, Room Amenities: Private Kitchen, Amenities: Disabled Facilities, Distance: < 1 mi",,,,,,,,,,Passed  
+28,"Star Rating: 3, Adults: 5, Children: 10, Beds: 3, Wi-Fi: Yes, Breakfast: No, Room Amenities: View, Amenities: Parking, Distance: < 2 mi",,,,,,,,,,Passed  
+29,"Star Rating: 5, Adults: 10, Children: 1, Beds: 1, Wi-Fi: No, Breakfast: Yes, Room Amenities: Coffee Machine, Amenities: Pet-Friendly, Distance: Doesn't Matter",,,,,,,,,,Passed  
+30,"Star Rating: 1, Adults: 10, Children: 1, Beds: 5, Wi-Fi: Yes, Breakfast: Yes, Room Amenities: AC, Amenities: 24-Hour Desk, Distance: < ½ mi",,,,,,,,,,Passed  
+31,"Star Rating: 3, Adults: 10, Children: 5, Beds: 5, Wi-Fi: No, Breakfast: No, Room Amenities: Private Kitchen, Amenities: Disabled Facilities, Distance: Doesn't Matter",,,,,,,,,,Passed  
+,,,,,,,,,,,
+Error Guessing Checklist,,,,,,,,,,,
+ID,Summary  ,,,,,,Result: Passed/Failed,,,,
+1,"Enter no filters and clicking ""Search.""",,,,,,Passed  ,,,,
+2,"Select conflicting filters (e.g., maximum adults and maximum children, but minimum beds).",,,,,,Passed  ,,,,
+3,Test the system's response to an empty result set (no rooms found).,,,,,,Passed  ,,,,

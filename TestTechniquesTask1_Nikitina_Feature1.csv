@@ -1,0 +1,40 @@
+Parameter List,,,,,,
+Years of Service,<5,5–9,10–19,20+,,
+Smoker,Yes,No,,,,
+Previous Missed Payments,Yes,No,,,,
+CarInsurance Purchased,Yes,No,,,,
+Cancer Protection,Yes,No,,,,
+Family Pack,Yes,No,,,,
+,,,,,,
+Pairwise Checklist,,,,,,
+ID,Summary  ,,,,,Result: Passed/Failed
+1,"Years <5, Smoker=N, PreviousMissed=N, Car=N, Cancer=N, Family=N
+Verify premium = 250 USD.",,,,,Passed  
+2,"Years <5, Smoker=Y, PreviousMissed=N, Car=N, Cancer=Y, Family=N
+Verify premium includes smoker surcharge and cancer pack.",,,,,Passed  
+3,"Years <5, Smoker=N, PreviousMissed=N, Car=Y, Cancer=Y, Family=N
+Verify premium includes cancer pack and car discount.",,,,,Passed  
+4,"Years <5, Smoker=Y, PreviousMissed=Y, Car=Y, Cancer=Y, Family=Y
+Verify request is not eligible.",,,,,Passed  
+5,"Years 5–9, Smoker=N, PreviousMissed=N, Car=Y, Cancer=N, Family=Y
+Verify premium with car discount and family pack.",,,,,Passed  
+6,"Years 5–9, Smoker=Y, PreviousMissed=N, Car=Y, Cancer=N, Family=N
+Verify premium includes smoker surcharge and car discount.",,,,,Passed  
+7,"Years 5–9, Smoker=Y, PreviousMissed=Y, Car=N, Cancer=Y, Family=N
+Verify request is not eligible.",,,,,Passed  
+8,"Years 5–9, Smoker=N, PreviousMissed=Y, Car=Y, Cancer=Y, Family=N
+Verify request is not eligible.",,,,,Passed  
+9,"Years 10–19, Smoker=Y, PreviousMissed=N, Car=Y, Cancer=N, Family=N
+Verify premium includes smoker surcharge, 10% discount, car discount.",,,,,Passed  
+10,"Years 10–19, Smoker=Y, PreviousMissed=N, Car=N, Cancer=Y, Family=Y
+Verify premium includes both packs, smoker surcharge, and 10% discount.",,,,,Passed  
+11,"Years 10–19, Smoker=N, PreviousMissed=Y, Car=N, Cancer=Y, Family=Y
+Verify request is not eligible.",,,,,Passed  
+12,"Years 20+, Smoker=Y, PreviousMissed=N, Car=N, Cancer=Y, Family=Y
+Verify premium includes smoker surcharge, 15% discount, cancer+family packs.",,,,,Passed  
+13,"Years 20+, Smoker=N, PreviousMissed=N, Car=Y, Cancer=Y, Family=Y
+Verify premium includes both packs, 15% discount, and car discount.",,,,,Passed  
+14,"Years 20+, Smoker=N, PreviousMissed=N, Car=N, Cancer=N, Family=N
+Verify premium = 127.50 USD (150 − 15%).",,,,,Passed  
+15,"Years 20+, Smoker=N, PreviousMissed=Y, Car=Y, Cancer=N, Family=N
+Verify request is not eligible.",,,,,Passed  

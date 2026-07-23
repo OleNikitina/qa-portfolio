@@ -1,0 +1,25 @@
+Error Guessing & Exploratory Checklist,,
+ID,Summary  ,Result: Passed/Failed
+1,"Enter valid phone numbers (domestic, international, with/without +, with spaces/dashes)",Passed  
+2,"Enter minimum length phone number (e.g., 1 digit if allowed).",Passed  
+3,Enter maximum length phone number,Passed  
+4,Enter phone numbers with letters/special symbols,Passed  
+5,Add two different doctors with the same phone number,Passed  
+6,Leave phone number empty but fill email,Passed  
+7,Enter only spaces or mixed whitespace as phone number,Passed  
+8,Enter very long string (500+ chars) in phone/email,Passed  
+9,"Make a successful transaction with each payment method (credit card, bank transfer, corporate account).",Passed  
+10,Simulate timeout from payment gateway,Passed  
+11,Simulate network interruption mid-transaction,Passed  
+12,"Perform duplicate transaction submission (double-click Pay, or refresh after paying)",Passed  
+13,Test cancelled transaction after redirect to gateway,Passed  
+14,Use invalid card details,Passed  
+15,Verify logs and error messages contain useful info without exposing sensitive data.,Passed  
+16,Process very large transactions,Passed  
+17,Run several corporate payments in parallel,Passed  
+18,Track memory usage during multiple corporate transactions,Passed  
+19,Attempt invalid corporate payment data,Passed  
+20,Add a new doctor with minimal info (only name),Passed  
+21,Add a doctor with multiple emails/phones if UI allows,Passed  
+22,"Switch payment method midway (e.g., start card and switch to bank transfer).",Passed  
+23,"Interrupt workflow deliberately (close tab, log out, session timeout) while payment in progress",Passed  

@@ -1,0 +1,19 @@
+State Transition Table,,,,,
+ID,Current State,Event,Action,Next State,Comments
+1,Initial (No Form),Employee fills and submits form.,Successful submission.,Pending Review,Initial entry and form validation.
+2,Pending Review,Insurance Officer completes review.,Officer rejects form (sends back).,Rejected (Employee Edit),Officer's ability to stop process for corrections.
+3,Rejected (Employee Edit),Employee adjusts form.,Employee re-submits form.,Pending Review,Successful resumption of the process.
+4,Rejected (Employee Edit),Time delay.,3 days pass without re-submission.,Canceled (Adjustment Expired),Auto-cancellation (3-day deadline).
+5,Pending Review,Insurance Officer completes review.,Officer proceeds with request.,Pending Accountant,Officer's ability to move the process forward.
+6,Pending Accountant,Accountant completes review.,Accountant confirms request.,Confirmed (Payment Pending),Accountant approval path.
+7,Pending Accountant,Accountant completes review.,Accountant rejects request.,Canceled (Accountant Rejection),Accountant rejection path.
+8,Pending Accountant,Accountant completes review.,Accountant requests more info.,Suspended (Info Req.),Activation of the suspension loop.
+9,Suspended (Info Req.),Employee provides info.,Info provided within 3 days.,Pending Accountant,Resumption from suspension.
+10,Suspended (Info Req.),Time delay.,3 days pass without info provided.,Canceled (Suspension Expired),Auto-cancellation (3-day suspension).
+11,Confirmed (Payment Pending),Employee makes first payment.,Payment received within 7 days of confirmation.,Active (Insured),Successful policy activation.
+12,Confirmed (Payment Pending),Time delay.,7 days pass without payment.,Canceled (Payment Failure),Auto-cancellation (7-day payment deadline).
+13,Active (Insured),Employee cancels request.,≤14 days AND No Accident.,Canceled (100% Refund),Full refund.
+14,Active (Insured),Employee cancels request.,≤14 days AND With Accident.,Canceled (75% Refund),Partial refund.
+15,Active (Insured),Employee cancels request.,>14 days after first payment.,Canceled (No Refund),Refund cutoff (14-day deadline).
+16,Active (Insured),Officer attempts to reject form.,Irrelevant/Invalid Action.,Active (Insured),Invalid Transition: Cannot move backward from Active state.
+17,Canceled (Any),Employee attempts re-submission.,Irrelevant/Invalid Action.,Same Canceled State,Invalid Transition: Confirms Canceled states are final.

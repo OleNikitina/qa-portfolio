@@ -1,0 +1,44 @@
+Parameter List,,,,
+Parameter,Values,,,
+Triangle Inequality,Valid (All sides: X<Y+Z),Invalid (At least one side ≥ sum),,
+Side A vs B,A = B (Equal),A ≠ B (Unequal),,
+Side B vs C,B = C (Equal),B ≠ C (Unequal),,
+Side A vs C,A = C (Equal),A ≠ C (Unequal),,
+,,,,
+,,,,
+Pairwise Checklist,,,,
+ID,Summary  ,Result: Passed/Failed,Comments,
+1,"Valid: A = B, B = C, A = C
+(5, 5, 5)",Passed  ,Equilateral,
+2,"Valid: A ≠ B, B ≠ C, A ≠ C
+(3, 4, 5)",Passed  ,Scalene,
+3,"Valid: A = B, B ≠ C, A ≠ C
+(5, 5, 8)",Passed  ,Isosceles (A=B),
+4,"Valid: A ≠ B, B = C, A ≠ C
+(8, 5, 5)",Passed  ,Isosceles (B=C),
+5,"Invalid: A = B, B ≠ C, A ≠ C
+(10, 10, 30)",Passed  ,Not a Triangle (A+B ≤ C),
+6,"Invalid: A ≠ B, B ≠ C, A = C
+(10, 20, 10)",Passed  ,Not a Triangle (A+C ≤ B),
+,,,,
+Equivalence Partitioning,,,,
+Valid Class,"Integers from 1 to 1,000,000",,,
+Invalid Class 1,Integers ≤0 ,,,
+Invalid Class 2,"Integers >1,000,000",,,
+,,,,
+Boundary Value Analysis,,,,
+Minimum Boundary,1,,,
+Below Minimum,0,,,
+Maximum Boundary,"1,000,000",,,
+Above Maximum,"1,000,001",,,
+,,,,
+Boundary Value Analysis Checklist,,,,
+ID,Summary  ,,,Result: Passed/Failed
+1,"Test the smallest possible valid inputs.
+(A = 1, B = 1, C = 1)",,,Passed  
+2,"Test the invalid value just below the minimum boundary (0).
+(A = 0, B = 10, C = 10)",,,Passed  
+3,"Test the largest possible valid inputs.
+(A = 1,000,000, B = 1,000,000, C = 1,000,000)",,,Passed  
+4,"Test the invalid value just above the maximum boundary
+(A = 1,000,001, B = 10, C = 10)",,,Passed  

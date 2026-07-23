@@ -1,0 +1,52 @@
+Equivalence Partitioning,,,,
+Parameter,Equivalence Classes,,,
+Email Address,"Valid Format
+(test.user@company.com)",,,
+,"Invalid Format - Missing @
+(test.usercompany.com)",,,
+,"Invalid Format - Missing Domain
+(test.user@)",,,
+Name Field,"Valid Data
+(Jane A. Smith-Doe)",,,
+,"Invalid Data  - Injection/Script
+(<script>alert('XSS')</script>)",,,
+,"Invalid Data - Excessive Length
+(256 characters)",,,
+CV/Resume File Type,"Valid File Types
+(MyResume.pdf or MyResume.docx)",,,
+,"Invalid File Type
+(MyResume.zip or MyResume.exe)",,,
+Cover Letter Field,"Present (Optional)
+(Attach a valid .pdf file.)",,,
+,"Absent (Optional)
+(Leave the field empty.)",,,
+,,,,
+Boundary Value Analysis,,,,
+File Size Limit,Maximum Boundary,1.00 MB,,
+,Minimum Boundary,1 byte (or smallest valid file),,
+Text Fields (Name/Email),Max Length,255 Characters,,
+,Minimum Length,1 Character,,
+,,,,
+Checklist for Equivalence Partitioning,,,,
+ID,Summary,,,Result: Passed/Failed
+1,"Test standard, compliant format. (test.user@company.com)",,,Passed  
+2,Test missing critical delimiter. (test.usercompany.com),,,Passed  
+3,Test incomplete domain structure.(test.user@),,,Passed  
+4,"Test standard, mixed characters.(Jane A. Smith-Doe)",,,Passed  
+5,Test security and prohibited characters. (<script>alert('XSS')</script>),,,Passed  
+6,Test exceeding the assumed maximum field length.(256 characters),,,Passed  
+7,Test acceptance of allowed file extensions.(MyResume.pdf or MyResume.docx),,,Passed  
+8,Test rejection of prohibited file extensions.(MyResume.zip or MyResume.exe),,,Passed  
+9,Test the acceptance of the optional Cover Letter input. (Attach a valid .pdf file.),,,Passed  
+10,Test the acceptance of a null value for an optional field.(Leave the field empty.),,,Passed  
+,,,,
+Checklist for Boundary Value Analysis,,,,
+ID,Summary,,,Result: Passed/Failed
+1,Test the highest accepted file size. (1.00 MB),,,Passed  
+2,Test the first invalid point past the maximum.(1.01 MB or 1 byte over),,,Passed  
+3,Test the minimum functional size (1 byte or smallest valid file),,,Passed  
+4,Test value that is not technically allowed as a valid file.(0 bytes (Empty file)),,,Passed  
+5,Test the longest accepted text string without error.(255 characters),,,Passed  
+6,Test the first invalid point past the maximum length boundary. (256 characters),,,Passed  
+7,"Test the minimum boundary for required fields, (1 character).",,,Passed  
+8,Test the minimum boundary (0 characters) for a field that cannot be null.(No characters),,,Passed  

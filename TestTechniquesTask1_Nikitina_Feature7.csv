@@ -1,0 +1,18 @@
+Exploratory & Error Guessing Checklist,,
+ID,Summary,Result: Passed/Failed
+1,"House-building mechanics – gather resources, construct structures, upgrade, demolish, rebuild.",Passed  
+2,"Survival cycle – collect food, cook it, eat, track hunger/thirst levels across a full day-night cycle.",Passed  
+3,"Combat mechanics – fight animals and mystical creatures (attack, defense, dodge, retreat).",Passed  
+4,"Exploration – traverse forest (dense jungle, rivers, cliffs, caves), observe transitions between areas.",Passed  
+5,"Weather & environment – test effects of rain, fog, storms, and night lighting on visibility and gameplay.",Passed  
+6,"Inventory management – collect, stack, drop, trade, and use items (check limits & sorting).",Passed  
+7,"Save/load system – save during different states (combat, building, exploration) and reload to verify persistence.",Passed  
+8,"Resource gathering – chop trees, mine rocks, hunt animals, pick plants → verify yield and respawn cycles.",Passed  
+9,"Death & respawn loop – die from combat, starvation, or environment, then respawn and continue.",Passed  
+10,"User interface & controls – check menus, tooltips, responsiveness across input devices.",Passed  
+11,"Check for collision bugs – walk through walls/trees, attack through obstacles, fall through terrain.",Passed  
+12,"Physics issues – drop items on cliffs/water → do they vanish, duplicate, or behave oddly?",Passed  
+13,"Inventory exploits – overfill backpack, duplicate items by quick-drop or save/load.",Passed  
+14,"Combat edge cases – kill creature exactly as you die, or log out mid-battle.",Passed  
+15,"Performance/memory – long play sessions (4+ hours), many structures → look for slowdown or crashes.",Passed  
+16,"Graphical glitches – textures missing at night, animations frozen, clipping of models.",Passed  
