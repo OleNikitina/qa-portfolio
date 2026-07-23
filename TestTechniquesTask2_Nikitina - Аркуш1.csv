@@ -1,0 +1,36 @@
+Valid Equivalence Classes,,,
+Class,"Figure range, km","Bonuses, qty","Fuel tax, $"
+EC1,0-499,100,20
+EC2,500-999,150,50
+EC3,1000-1100,300,50
+EC4,1101-1699,300,80
+EC5,1700-3000,500,120
+EC6,3001-3499,800,120
+EC7,3501+,800,110
+,,,
+Checklist,,,
+ID,Summary  ,Result: Passed/Failed,
+1,Enter 0 km,Passed  ,
+2,Enter 499 km ,Passed  ,
+3,Enter 500 km,Passed  ,
+4,Enter 999 km,Passed  ,
+5,Enter 1000 km,Passed  ,
+6,Enter 1100 km,Passed  ,
+7,Enter 1101 km,Passed  ,
+8,Enter 1699 km,Passed  ,
+9,Enter 1700 km,Passed  ,
+10,Enter 3000 km,Passed  ,
+11,Enter 3001 km,Passed  ,
+12,Enter 3499 km,Passed  ,
+13,Enter 3500 km (is not included in either range),Failed,
+14,Enter 3501 km,Passed  ,
+15,Enter -1 km,Passed  ,
+16,Leave field empty,Passed  ,
+17,Enter 500.5 km,Passed  ,
+18,Enter 999.99 km,Passed  ,
+19,Enter 999999 km,Passed  ,
+20,Leading zeros (0500),Passed  ,
+21,"Enter ""abc"" ",Passed  ,
+22,"Enter ""500km""",Passed  ,
+23,"Enter ""@#$%""",Passed  ,
+24,Enter spaces only,Passed  ,
